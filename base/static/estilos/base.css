@@ -1,0 +1,96 @@
+body {
+    background-color: #d8c3a5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #3e2723;
+
+
+}
+
+/* Estilo del contenedor interno */
+.encabezado {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    background-color: white;
+}
+
+/* Enlaces alineados y separados */
+.enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-right: 10px;
+
+}
+
+/* Estilo de los enlaces */
+.enlaces a {
+    text-decoration: none;
+    justify-content: center;
+    color: #a9745b;
+    padding: 8px 12px;
+    transition: background 0.2s;
+    font-size: 30px;
+}
+
+.enlaces a:hover {
+    background-color: #f0e6d2;
+    border-radius: 13px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #000000;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+
+    }
+
+    .enlaces {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #3e2723;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        display: none;
+        padding: 10px 0;
+        align-items: center;
+        /* esto alinea los items a la derecha en columna */
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .enlaces.active {
+        display: flex;
+    }
+    .enlaces a {
+        width: auto;   
+        border-bottom: 2px solid white;         /* para que el área clickeable sea todo el ancho del menú */
+    }
+}
