@@ -1,0 +1,46 @@
+footer {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #ccc;
+}
+
+footer .pie,
+footer .interes {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #111;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #0056b3;
+}
