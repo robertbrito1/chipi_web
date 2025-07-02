@@ -23,10 +23,10 @@
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <nav class="navbar">
                 <div class="enlaces" id="navLinks">
-                    <a href="#">Proyectos</a>
-                    <a href="#">Galería</a>
-                    <a href="#">Sobre mí</a>
-                    <a href="#">Blog</a>
+                    <a href="{% url 'proyectos' %}">Proyectos</a>
+                    <a href="{% url 'galeria' %}">Galería</a>
+                    <a href="{% url 'sobre_mi' %}">Sobre mí</a>
+                    <a href="{% url 'blog' %}">Blog</a>
                 </div>
             </nav>
         </div>
@@ -45,9 +45,9 @@
   <div class="interes">
     <h4>Enlaces de interés</h4>
     <ul>
-      <li><a href="#">Galería</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Sobre mí</a></li>
+      <li><a href="{% url 'galeria' %}">Galería</a></li>
+      <li><a href="{% url 'blog' %}">Blog</a></li>
+      <li><a href="{% url 'sobre_mi' %}">Sobre mí</a></li>
       <li><a href="#">Política de privacidad</a></li>
     </ul>
   </div>

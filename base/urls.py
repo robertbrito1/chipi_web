@@ -22,6 +22,10 @@ from django.conf import settings
 
 
 urlpatterns = [
+   path('blog/', views.blog, name='blog'),
+   path('proyectos/', views.proyectos, name='proyectos'),
+   path('galeria/', views.galeria, name='galeria'),
+   path('sobre_mi/', views.sobre_mi, name='sobre_mi'),
    path('', views.inicio, name='inicio'),
 ]
 
