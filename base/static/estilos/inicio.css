@@ -1,0 +1,137 @@
+/* CONTENEDOR PRINCIPAL */
+.inicio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 5%;
+    
+    gap: 30px;
+}
+
+/* TEXTO A LA IZQUIERDA */
+.intro-texto {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    color: #4e2626;
+}
+
+/* ENCABEZADOS Y TEXTO */
+.intro-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #a9745b;
+}
+
+.intro-texto h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #7b4f3d;
+}
+
+.intro-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* BOTÓN DE PROYECTOS */
+.btn-ver-proyectos {
+    padding: 12px 24px;
+    background-color: #a9745b;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.btn-ver-proyectos:hover {
+    background-color: #8a5d47;
+}
+
+/* IMAGEN A LA DERECHA */
+.intro-imagen {
+    flex: 1;
+    min-width: 300px;
+    
+}
+
+.intro-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* SECCIÓN DE HABILIDADES */
+.skills {
+    
+    padding: 40px 5%;
+    color: #4e2626;
+}
+
+.skills h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #a9745b;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.skills ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.skills ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #a9745b;
+}
+.cv-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.btn-cv {
+    padding: 12px 24px;
+    background-color: #a9745b;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-cv:hover {
+    background-color: #8a5d47;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .inicio-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-texto,
+    .intro-imagen {
+        max-width: 100%;
+    }
+
+    .intro-texto {
+        padding: 0 20px;
+    }
+}

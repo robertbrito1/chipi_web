@@ -1,9 +1,30 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block content %}
-<section>
-    <h1>hola</h1>
+<section class="inicio-container">
+    <div class="intro-texto">
+        <h1>Francisco Jiménez</h1>
+        <h2>Arquitecto & Máster en Diseño de Interiores</h2>
+        <p>Recientemente titulado con un Máster en Diseño de Interiores, aplico conocimientos técnicos y creativos para transformar espacios residenciales y comerciales. Con experiencia en AutoCAD y visualización 3D, desarrollo soluciones estéticas, funcionales y modernas.</p>
+        <a href="{% url 'proyectos' %}" class="btn-ver-proyectos">Explorar Proyectos</a>
+    </div>
+
+    <div class="intro-imagen">
+        <img src="{% static 'imagenes/francisco_jimenez.jpg' %}" alt="Francisco Jiménez - Arquitecto">
+    </div>
 </section>
 
-
+<section class="skills">
+    <h3>Especializado en:</h3>
+    <ul>
+        <li>Diseño de interiores residenciales y comerciales</li>
+        <li>Planificación técnica con AutoCAD</li>
+        <li>Modelado y renders arquitectónicos 3D</li>
+        <li>Rediseño de espacios y reformas</li>
+    </ul>
+</section>
+<div class="cv-container">
+  <a href="#" class="btn-cv" >¿Hablamos sobre tu proyecto</a>
+</div>
 {% endblock %}
